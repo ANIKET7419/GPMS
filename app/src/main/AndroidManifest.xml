@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.anp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/gateway"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".About_us"></activity>
+        <activity android:name=".HISTORY_RECYCERVIEW" />
+        <activity android:name=".GUARD_ACCEPTED" />
+        <activity android:name=".HAS_MEET" />
+        <activity android:name=".Visitor_request_to_teacher" />
+        <activity android:name=".Information" />
+        <activity android:name=".DIVERTER" />
+        <activity android:name=".DEPARTMENT" />
+        <activity android:name=".Visitor_registartion" />
+        <activity android:name=".Recyclerview_activity" />
+        <activity android:name=".DIRECTION" />
+        <activity android:name=".profile" />
+        <activity android:name=".login" />
+        <activity android:name=".history" />
+        <activity android:name=".Main7Activity" />
+        <activity android:name=".Main6Activity" />
+        <activity android:name=".Main5Activity" />
+        <activity android:name=".Main4Activity" />
+        <activity android:name=".Main3Activity" />
+        <activity android:name=".Main2Activity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".background_service"
+            android:enabled="true"
+            android:stopWithTask="false" />
+
+        <receiver
+            android:name=".Receiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped">
+            <intent-filter>
+                <action android:name="Restart" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

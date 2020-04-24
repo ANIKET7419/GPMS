@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GPMS</string>
+    <string name="sdk_envd">PP</string>
+    <string name="api_base_url">https://preprod.quagga.in/gateway/</string>
+</resources>
